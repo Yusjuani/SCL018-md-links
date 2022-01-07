@@ -37,23 +37,27 @@ const contents = (file) => {
 };
 
 const statusLinks = (links) => {
-  const valiLinks = links.map((element => {
-    fetch(element.link)
+  const valiLinks = links.map((element => fetch(element.link)
       .then(response => {
-        if (response.status == 200) {
-          console.log(element.text +' ' +element.link + ' ' +'status ' + response.status);
-        } else {
-          console.log(element.text + element.link + response.status);
-        }
+          return {
+            file: element.file,
+            link: element.link,
+            text: element.text,
+            status: response.status,
+          }
           })
         .catch(error => {
-          console.log('Este link no funciona ' + element.link);
+          return{
+            link: element.link,
+            text: element.text,
+            status: 'Fail',
+          }
           })
-  
-  })
+    )
   );
-  return Promise.all (valiLinks);
+  return Promise.all(valiLinks);
 };
+
 
 const mdLinks = (file) => {
   return new Promise((resolve, reject) => {
@@ -63,8 +67,10 @@ const mdLinks = (file) => {
     } else {
       resolve(valLinks);
     }
-    }).catch(err => console.error(err));
-    reject();
+    }).catch(err => reject(err));
   });
 }
-mdLinks(route).then(rest => {console.log(chalk.green(rest))}).catch(err => console.error(chalk.red(err)));
+
+mdLinks(route).then(rest => {console.log(rest)}).catch(err => console.error(err));
+
+module.exports = {mdLinks, statusLinks, contents, readLinks};
