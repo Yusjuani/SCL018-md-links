@@ -5,7 +5,7 @@ Markdown Links es una librería que extrae y valida los links de los archivos co
 
 ### 2. Instalación
 Se necesita de instalación previa de Node.js. En el terminal colocar el siguiente comando:
-** Install npm i mdlinks-yus **
+**Install npm i mdlinks-yus**
 
 ### 3. Validación
 $ mdlinks-yus README.md --validate  (este comando se usa para validar el archivo)
