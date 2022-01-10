@@ -1,4 +1,4 @@
-<details >
+<details>
 
 ### 1. Preámbulo
 Markdown Links es una librería que extrae y valida los links de los archivos con formato .MD (markdown).
@@ -8,10 +8,10 @@ Se necesita de instalación previa de Node.js. En el terminal colocar el siguien
 Install npm i mdlinks-yus 
 
 ### 3. Validación
-$ mdlinks-yus README.md --validate  (este comando se una para correr el archivo)
+$ mdlinks-yus README.md --validate  (este comando se usa para validar el archivo)
 
 ### 4. Guia de Uso
-
+![Screenshot](md-links.png)
 [Diagrama de flujo](https://lucid.app/lucidchart/7e070fc0-be4a-462c-8001-091e7a76ca17/view?page=0_0&invitationId=inv_d50d082b-541c-4e93-a958-0162802e4efc#)
 
 </details>

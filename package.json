@@ -21,14 +21,14 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Yusjuani/SCL018-md-links.git"
   },
   "keywords": [
-    "--validate"
+    "node"
   ],
   "author": "Yusjuani",
   "license": "ISC",

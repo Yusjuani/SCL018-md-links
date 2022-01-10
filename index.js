@@ -73,4 +73,4 @@ const mdLinks = (file) => {
 
 mdLinks(route).then(rest => {console.log(rest)}).catch(err => console.error(err));
 
-module.exports = {mdLinks, statusLinks, contents, readLinks};
+module.exports = {mdLinks, statusLinks};
