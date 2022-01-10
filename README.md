@@ -12,13 +12,12 @@ $ mdlinks-yus README.md --validate  (este comando se una para correr el archivo)
 
 ### 4. Guia de Uso
 
-[Diagrama](https://lucid.app/lucidchart/7e070fc0-be4a-462c-8001-091e7a76ca17/view?page=0_0&invitationId=inv_d50d082b-541c-4e93-a958-0162802e4efc#)
+[Diagrama de flujo](https://lucid.app/lucidchart/7e070fc0-be4a-462c-8001-091e7a76ca17/view?page=0_0&invitationId=inv_d50d082b-541c-4e93-a958-0162802e4efc#)
 
 </details>
 
 
 <details>
-# Markdown Links
 
 ## Índice
 
